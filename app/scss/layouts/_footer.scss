@@ -1,0 +1,162 @@
+footer {
+    padding: 80px 0px;
+
+    @media screen and (max-width: $medium) {
+        padding: 60px 0px 50px;
+    }
+    @media screen and (max-width: $small) {
+        padding: 50px 0px 40px;
+    }
+    .container-fluid {
+        max-width: 90%;
+    }
+    .col-sm-6 {
+        &:last-of-type {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}
+.footer-main-nav {
+    margin-bottom: 50px;
+    padding: 0px;
+
+    @media screen and (max-width: $small) {
+        margin-bottom: 30px;
+    }
+    li {
+        list-style-type: none;
+        margin-bottom: 5px;
+
+        a {
+            color: $black;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.footer-subnav {
+    margin-bottom: 0px;
+    padding: 0px;
+
+    @media screen and (max-width: $small) {
+        margin-bottom: 30px;
+    }
+    li {
+        list-style-type: none;
+        margin-bottom: 3px;
+
+        a {
+            color: $black;
+            text-decoration: none;
+            font-size: 14px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.mailing-list {
+    display: flex;
+    justify-content: flex-end;
+    
+    @media screen and (max-width: $medium) {
+        display: block;
+    }
+    @media screen and (max-width: $small) {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    @media screen and (max-width: 400px) {
+        display: block;
+    }
+    input {
+        border-radius: 0px;
+
+        &:focus {
+            box-shadow: none;
+        }
+        &[type="email"] {
+            font-family: $roboto;
+            max-width: 325px;
+            font-weight: 500;
+            font-size: 20px;
+            text-transform: initial;
+            border: 1px solid #dddbda;
+            text-align: center;
+            color: $black;
+            
+            @media screen and (max-width: $medium) {
+                font-size: 18px;
+                max-width: none;
+            }
+            @media screen and (max-width: $small) {
+                max-width: 325px;
+                font-size: 16px;
+            }
+            @media screen and (max-width: 400px) {
+                max-width: none;
+            }
+            &:focus {
+                border: 1px solid #dddbda;
+            }
+            &::placeholder {
+                text-transform: uppercase;
+                color: $black;
+                text-align: center;
+            }
+        }
+        &[type="submit"] {
+            font-family: $roboto;
+            font-weight: 500;
+            font-size: 20px;
+            background-color: #51b549;
+            color: $white;
+            text-transform: uppercase;
+            border: none;
+            padding: 0px 20px;
+            transition: .2s ease-in-out;
+
+            @media screen and (max-width: $medium) {
+                font-size: 18px;
+                width: calc(100%);
+                padding: 10px;
+                margin-top: 15px;
+            }
+            @media screen and (max-width: $small) {
+                width: auto;
+                padding: 0px 20px;
+                margin-top: 0px;
+                font-size: 16px;
+            }
+            @media screen and (max-width: 400px) {
+                width: calc(100%);
+                padding: 10px;
+                margin-top: 10px;
+            }
+            &:hover {
+                background-color: lighten(#51b549, 7%);
+            }
+        }
+    }
+}
+.sera-address {
+    p {
+        text-align: right;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 0px;
+
+        @media screen and (max-width: $small) {
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,129 @@
+@media print {
+    header {
+        position: relative;
+
+        .container-fluid {
+            .row {
+                height: auto;
+            }
+        }
+    }
+    nav, footer {
+        display: none;
+    }
+    .trip-img {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .trip-img__img {
+        height: auto;
+        order: 2;
+
+        img {
+            width: 500px;
+            height: auto;
+            object-fit: unset;
+        }
+    }
+    .trip-img__text {
+        position: relative;
+        top: auto;
+        left: auto;
+        order: 1;
+        margin: 70px 0px 30px;
+        width: 100%;
+
+        h1, h2 {
+            color: $black;
+        }
+    }
+    .trip-details-page {
+        .col-md-6 {
+            padding: 0px;
+        }
+    }
+    .trip-details {
+        margin-top: 50px;
+        padding: 0px;
+        max-width: none;
+        height: auto;
+
+        .container-fluid {
+            width: 100%;
+            padding: 0px;
+        }
+    }
+    .btn {
+        border: 1px solid $black;
+        color: $black;
+    }
+    .interior-page .hero + main {
+        padding: 80px 0px;
+    }
+    .homepage-featured-trip {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .homepage-featured-trip__img {
+        height: calc(50vh - 81px);
+        order: 2;
+    }
+    .homepage-featured-trip__text {
+        position: relative;
+        top: auto;
+        order: 1;
+        margin: 50px 0px 30px;
+        
+        h1, h2 {
+            color: $black;
+        }
+    }
+    .trip-cta__cta {
+        text-decoration: none !important;
+    }
+    .trip-cta__cta__overlay {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        margin-top: 20px;
+
+        span {
+            color: $black;
+        }
+    }
+    .trip-list .col-lg-3 {
+        page-break-inside: avoid;
+    }
+    .contact-ctas {
+        padding-bottom: 20px;
+    }
+    .contact-ctas__cta {
+        -webkit-print-color-adjust: exact !important;
+        background-blend-mode: normal;
+        background-color: rgba(142, 208, 225, .7);
+        background-image: none;
+        text-decoration: none !important;
+        max-width: 650px;
+        margin: 0px auto;
+
+        &:first-of-type {
+            margin-bottom: 30px;
+        }
+    }
+    .contact-page main {
+        padding-top: 0px;
+    }
+    .contact-form {
+        label {
+            float: none;
+            margin-bottom: 10px;
+            margin-top: 0px;
+        }
+        input, textarea {
+            -webkit-print-color-adjust: exact !important;
+        }
+    }
+}

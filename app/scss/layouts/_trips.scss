@@ -1,0 +1,210 @@
+.trips-page {
+    main {
+        padding: 0px;
+    
+        .trip-list {
+            padding: 100px 0px 50px;
+            background-color: $white;
+        }
+    }
+    h1 {
+        display: none;
+    }
+}
+.trip-details-page {
+    main {
+        padding: 0px;
+
+        .container-fluid {
+            width: 100%;
+        }
+        .col-md-6 {
+            &:first-of-type {
+                padding: 0px;
+            }
+            &:last-of-type {
+                @media screen and (max-width: $medium) {
+                    padding: 0px calc(5% + 25px);
+                }
+            }
+        }
+    }
+}
+.trip-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+
+        @media screen and (max-width: $medium) {
+            height: 400px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+        }
+    }
+    &__text {
+        position: absolute;
+        top: 100px;
+        left: 10%;
+        z-index: 2;
+        width: 80%;
+
+        @media screen and (max-width: $medium) {
+            width: calc(90% - 50px);
+            left: calc(5% + 25px);
+            top: 80px;
+        }
+        h1 {
+            color: $white;
+            font-size: 50px;
+            text-transform: uppercase;
+            margin-top: 0px;
+            margin-bottom: 5px;
+            text-shadow: 0px 0px 7px rgba($black, .2);
+
+            @media screen and (max-width: $large) {
+                font-size: 40px;
+            }
+            @media screen and (max-width: $small) {
+                font-size: 34px;
+            }
+        }
+        h2 {
+            color: $white;
+            font-size: 40px;
+            text-shadow: 0px 0px 7px rgba($black, .2);
+
+            @media screen and (max-width: $large) {
+                font-size: 30px;
+            }
+            @media screen and (max-width: $small) {
+                font-size: 26px;
+            }
+        }
+    }
+}
+.trip-details {
+    padding: 100px 5% 50px;
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (max-width: $medium) {
+        padding: 50px 0px 30px;
+        max-width: none;
+    }
+    > .container-fluid {
+        @media screen and (max-width: $medium) {
+            width: 90%;
+            padding: 0px;
+        }
+    }
+    &__trip-price {
+        font-size: 35px;
+        font-weight: bold;
+        margin-right: 20px;
+        display: inline-block;
+        margin-bottom: 5px;
+
+        @media screen and (max-width: $small) {
+            font-size: 28px;
+        }
+    }
+    &__trip-status {
+        font-size: 24px;
+        font-weight: bold;
+        display: inline-block;
+
+        @media screen and (max-width: $small) {
+            font-size: 20px;
+        }
+    }
+    hr {
+        border: none;
+        background-color: $black;
+        height: 1px;
+    }
+    &__overview {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        
+        li {
+            font-size: 22px;
+            font-weight: bold;
+            padding-left: 10px;
+            margin-bottom: 3px;
+
+            @media screen and (max-width: $small) {
+                font-size: 18px;
+            }
+        }
+    }
+    &__drivers-tip {
+        font-size: 12px;
+        font-weight: 500;
+        font-style: italic;
+        margin-bottom: 40px;
+    }
+    &__itinerary {
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: block;
+
+        @media screen and (max-width: $small) {
+            font-size: 20px;
+        }
+    }
+    &__trip-date {
+        font-size: 22px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 15px;
+
+        @media screen and (max-width: $small) {
+            font-size: 20px;
+        }
+    }
+    &__itinerary-list {
+        margin-bottom: 40px;
+        
+        @media screen and (max-width: $small) {
+            margin-bottom: 20px;
+        }
+        &__item {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+
+            &__time {
+                width: 100px;
+                font-size: 14px;
+            }
+            &__desc {
+                width: calc(100% - 100px);
+                font-size: 14px;
+            }
+        }
+    }
+    &__button {
+        display: block;
+        width: 300px;
+        margin: 30px 0px !important;
+
+        @media screen and (max-width: $small) {
+            width: 100%;
+            font-size: 18px !important;
+        }
+    }
+}

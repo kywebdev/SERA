@@ -1,0 +1,111 @@
+.gift-certificates-page {
+    main {
+        .container-fluid {
+            max-width: 1200px;
+        }
+    }
+    hr {
+        background-color: $black;
+        border: none;
+        height: 2px;
+        width: 90%;
+
+        @media screen and (max-width: $large) {
+            width: 100%;
+        }
+    }
+    h1 {
+        display: none;
+    }
+}
+.certificate {
+    &-heading-1 {
+        font-size: 38px;
+        font-weight: 500;
+        font-style: italic;
+        text-align: center;
+        width: 100%;
+        max-width: 750px;
+        margin: 0px auto 10px;
+
+        @media screen and (max-width: $medium) {
+            font-size: 32px;
+        }
+        @media screen and (max-width: $small) {
+            font-size: 28px;
+        }
+    }
+    &-heading-2 {
+        font-size: 40px;
+        font-weight: bold;
+        color: $blue;
+        text-align: center;
+        width: 100%;
+        max-width: 750px;
+        margin: 0px auto 30px;
+
+        @media screen and (max-width: $medium) {
+            font-size: 34px;
+        }
+        @media screen and (max-width: $small) {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+    }
+    &-heading-3 {
+        font-size: 28px;
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+        max-width: 750px;
+        margin: 0px auto 30px;
+
+        @media screen and (max-width: $medium) {
+            font-size: 22px;
+        }
+        @media screen and (max-width: $small) {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+    &-heading-4 {
+        font-size: 38px;
+        font-weight: bold;
+        color: $blue;
+        text-align: center;
+        width: 100%;
+        max-width: 750px;
+        margin: 30px auto;
+
+        @media screen and (max-width: $medium) {
+            font-size: 32px;
+        }
+        @media screen and (max-width: $small) {
+            font-size: 28px;
+            margin: 20px auto 25px;
+        }
+    }
+}
+.gift-certificate-img {
+    width: 100%;
+}
+.gift-certificate-buttons {
+    margin-top: 40px;
+    text-align: center;
+
+    @media screen and (max-width: $small) {
+        margin-top: 20px;
+    }
+    &__button {
+        text-transform: uppercase;
+        margin: 20px 5% !important;
+
+        @media screen and (max-width: $medium) {
+            margin: 20px 0% !important;
+            width: 100%;
+        }
+        @media screen and (max-width: $small) {
+            margin: 13px 0% !important;
+        }
+    }
+}
